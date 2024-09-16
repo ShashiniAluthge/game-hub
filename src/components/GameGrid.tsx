@@ -19,7 +19,7 @@ const skeletons = [1,2,3,4,5]
   return (
     <div>
         {error && <text>{error}</text>}
-   <SimpleGrid columns={{sm:1,md:2,lg:3}} spacing={4} padding={'10px'}>
+   <SimpleGrid columns={{sm:1,md:2,lg:3}} spacing={6} padding={'10px'}>
     {isLoading && skeletons.map(skeleton=>(
         <GameCardContainer  key={skeleton}>
         <GameCardSkeleton/>
